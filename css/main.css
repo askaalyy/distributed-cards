@@ -14,6 +14,10 @@ body {
   background-color: #f5f2f0;
 }
 
+h1 h2 {
+  color: #623b0c;
+}
+
 img {
   display: block;
   width: 100%;
