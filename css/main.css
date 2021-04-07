@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
-  font-family: Georgia, "Denk One";
+  font-family: Georgia, serif;
+  font-family: "Denk One";
   line-height: 1.5;
 }
 
@@ -8,4 +9,28 @@ html {
   box-sizing: inherit;
 }
 
-bo
+body {
+  margin: 0;
+  background-color: #f5f2f0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+main ol {
+  display: flex;
+  list-style-type: none;
+
+}
+
+
+
+@media only screen and (min-width: 40em) {
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
