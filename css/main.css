@@ -14,18 +14,6 @@ body {
   justify-content: space-between;
 }
 
-body main ol {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr 1fr;
-}
-
-main h1, h2 {
-  color: #623b0c;
-  font-family: "Denk One";
-  font-style: normal;
-}
-
 img {
   width: 100%;
   padding-bottom: .5em;
@@ -38,32 +26,48 @@ main ol {
   padding: 1rem;
 }
 
+body main ol {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+main h1, h2 {
+  color: #623b0c;
+  font-family: "Denk One";
+  font-style: normal;
+}
+
 main ol li {
   width: 100%;
   padding: 1rem;
-  list-style: none;
+  list-style-type: none;
+  border-radius: 8px;
+  background-color: #ede3db;
+  border: 2px #623b0c;
+  border-style: solid;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
-main li p {
-  flex-grow: 1;
-  font-family: Georgia, serif;
-}
-
-a
-
-.button {
+main a {
+  color: #ede3db;
   background-color: #623b0c;
-  color: #fff;
-  padding: .5em 1em;
-  border-radius: .3em;
+  text-decoration: none;
+  padding: .5em;
 }
 
-.button:hover {
-  border-bottom: none;
-  color: #fff;
+main h1 {
+  margin: 1rem 1rem -.5rem 1rem;
+}
+
+main h2 {
+  margin: 0 0 1.5rem;
+}
+
+main > ol p {
+  flex-grow: 1;
+  padding-bottom: .5rem;
 }
