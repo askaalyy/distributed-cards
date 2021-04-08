@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
   font-family: Georgia, serif;
-  font-family: "Denk One";
   line-height: 1.5;
 }
 
@@ -14,8 +13,10 @@ body {
   background-color: #f5f2f0;
 }
 
-h1 h2 {
+main h1, h2 {
   color: #623b0c;
+  font-family: "Denk One";
+  font-style: normal;
 }
 
 img {
@@ -25,11 +26,15 @@ img {
 
 main ol {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
   list-style-type: none;
   grid-template-columns: 1rem;
   background-color: #ede3db;
   border-radius: 8px;
   border-color: #623b0c;
+  font-family: "Denk One";
 
 }
 
