@@ -10,7 +10,8 @@ html {
 
 body {
   margin: 0;
-  background-color: #f5f2f0;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 body main ol {
@@ -26,8 +27,8 @@ main h1, h2 {
 }
 
 img {
-  display: block;
   width: 100%;
+  padding-bottom: .5em;
 }
 
 main ol {
@@ -35,11 +36,6 @@ main ol {
   flex-wrap: wrap;
   justify-content: center;
   padding: 1rem;
-  background-color: #ede3db;
-  border-radius: 8px;
-  border-color: #623b0c;
-  font-family: "Denk One";
-
 }
 
 main ol li {
@@ -58,11 +54,16 @@ main li p {
   font-family: Georgia, serif;
 }
 
+a
 
-@media only screen and (min-width: 40em) {
+.button {
+  background-color: #623b0c;
+  color: #fff;
+  padding: .5em 1em;
+  border-radius: .3em;
+}
 
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.button:hover {
+  border-bottom: none;
+  color: #fff;
 }
