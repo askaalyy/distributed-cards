@@ -13,6 +13,12 @@ body {
   background-color: #f5f2f0;
 }
 
+body main ol {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
 main h1, h2 {
   color: #623b0c;
   font-family: "Denk One";
@@ -29,8 +35,6 @@ main ol {
   flex-wrap: wrap;
   justify-content: center;
   padding: 1rem;
-  list-style-type: none;
-  grid-template-columns: 1rem;
   background-color: #ede3db;
   border-radius: 8px;
   border-color: #623b0c;
@@ -39,11 +43,11 @@ main ol {
 }
 
 main ol li {
-  width: 50%;
-  padding: .5em .75em .6em;
-  display: grid;
-  grid-template-columns: 1fr, 1fr;
-  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  list-style: none;
+
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 
